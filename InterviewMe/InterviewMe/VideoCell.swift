@@ -36,6 +36,7 @@ class VideoCell: UICollectionViewCell {
   public func configureCell(for interview: Interview) {
     currentInterview = interview
     promptLabel.text = interview.prompt
+    videoThumbnail.image = UIImage(data: interview.imageData)
   }
   
   @objc private func handleLongPress(_ gesture: UILongPressGestureRecognizer) {

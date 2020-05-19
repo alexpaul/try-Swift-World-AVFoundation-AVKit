@@ -8,6 +8,8 @@
 
 import Foundation
 
+// DataPersistence is type constrained to only work
+// with Codable and Equatable types
 struct Interview: Codable & Equatable {
   let date = Date()
   let id = UUID().uuidString

@@ -3,12 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5731B6902470B6F800555B61 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5731B68F2470B6F800555B61 /* HeaderView.swift */; };
 		5731B6922470C16800555B61 /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5731B6912470C16800555B61 /* FloatingButton.swift */; };
+		57ED5B902473479A007EC519 /* URL+VideoThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ED5B8F2473479A007EC519 /* URL+VideoThumbnail.swift */; };
+		57ED5B9224734F00007EC519 /* Data+VideoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ED5B9124734F00007EC519 /* Data+VideoURL.swift */; };
+		57ED5B95247351C7007EC519 /* DataPersistence in Frameworks */ = {isa = PBXBuildFile; productRef = 57ED5B94247351C7007EC519 /* DataPersistence */; };
 		57F7A5A72470A56C002A422D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F7A5A62470A56C002A422D /* AppDelegate.swift */; };
 		57F7A5A92470A56C002A422D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F7A5A82470A56C002A422D /* SceneDelegate.swift */; };
 		57F7A5AB2470A56C002A422D /* InterviewFeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F7A5AA2470A56C002A422D /* InterviewFeedController.swift */; };
@@ -22,6 +25,8 @@
 /* Begin PBXFileReference section */
 		5731B68F2470B6F800555B61 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		5731B6912470C16800555B61 /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
+		57ED5B8F2473479A007EC519 /* URL+VideoThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+VideoThumbnail.swift"; sourceTree = "<group>"; };
+		57ED5B9124734F00007EC519 /* Data+VideoURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+VideoURL.swift"; sourceTree = "<group>"; };
 		57F7A5A32470A56C002A422D /* InterviewMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57F7A5A62470A56C002A422D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57F7A5A82470A56C002A422D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57ED5B95247351C7007EC519 /* DataPersistence in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +73,8 @@
 				57F7A5A62470A56C002A422D /* AppDelegate.swift */,
 				57F7A5A82470A56C002A422D /* SceneDelegate.swift */,
 				5731B6912470C16800555B61 /* FloatingButton.swift */,
+				57ED5B8F2473479A007EC519 /* URL+VideoThumbnail.swift */,
+				57ED5B9124734F00007EC519 /* Data+VideoURL.swift */,
 				57F7A5BA2470A5ED002A422D /* VideoCell.swift */,
 				5731B68F2470B6F800555B61 /* HeaderView.swift */,
 				57F7A5BC2470A654002A422D /* Interview.swift */,
@@ -95,6 +103,9 @@
 			dependencies = (
 			);
 			name = InterviewMe;
+			packageProductDependencies = (
+				57ED5B94247351C7007EC519 /* DataPersistence */,
+			);
 			productName = InterviewMe;
 			productReference = 57F7A5A32470A56C002A422D /* InterviewMe.app */;
 			productType = "com.apple.product-type.application";
@@ -123,6 +134,9 @@
 				Base,
 			);
 			mainGroup = 57F7A59A2470A56C002A422D;
+			packageReferences = (
+				57ED5B93247351C7007EC519 /* XCRemoteSwiftPackageReference "DataPersistence" */,
+			);
 			productRefGroup = 57F7A5A42470A56C002A422D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -154,6 +168,8 @@
 				5731B6902470B6F800555B61 /* HeaderView.swift in Sources */,
 				5731B6922470C16800555B61 /* FloatingButton.swift in Sources */,
 				57F7A5BB2470A5ED002A422D /* VideoCell.swift in Sources */,
+				57ED5B9224734F00007EC519 /* Data+VideoURL.swift in Sources */,
+				57ED5B902473479A007EC519 /* URL+VideoThumbnail.swift in Sources */,
 				57F7A5A72470A56C002A422D /* AppDelegate.swift in Sources */,
 				57F7A5A92470A56C002A422D /* SceneDelegate.swift in Sources */,
 				57F7A5BD2470A654002A422D /* Interview.swift in Sources */,
@@ -354,6 +370,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		57ED5B93247351C7007EC519 /* XCRemoteSwiftPackageReference "DataPersistence" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alexpaul/DataPersistence";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		57ED5B94247351C7007EC519 /* DataPersistence */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57ED5B93247351C7007EC519 /* XCRemoteSwiftPackageReference "DataPersistence" */;
+			productName = DataPersistence;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 57F7A59B2470A56C002A422D /* Project object */;
 }
