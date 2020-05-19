@@ -5,4 +5,4 @@ Looking to integrate video into your application? In this workshop you will get 
 
 ## In-workshop final app
 
-![screenshot](https://user-images.githubusercontent.com/1819208/82272827-b1a0f700-9949-11ea-805f-b790dfe4e6a5.png)
+![screenshot](https://user-images.githubusercontent.com/1819208/82311309-8642fa00-9993-11ea-98b3-391f25cca54f.PNG)
